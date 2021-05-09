@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    padding: 0;
+    margin:0;
+
+}
+
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-image: url(../Spiel4/Image/codeknackerg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+
+    
+}
+
+#input{
+   
+
+
+}
+
+#code{
+    background-color: red;
+    font-weight: bold;
+    color: black;
+    font-size: 1.5rem;
+    width: 100px;
+    
+
+
+
+}
+
+.button1{
+
+    background-color: gray;
+    color: yellow;
+    width: 100px;
+    height: 50px;
+    margin: 40px;
+    
+}
+
+.button1:hover{
+    cursor: pointer;
+    background-color: blue;
+}
+
+h1{
+    font-weight: bold;
+    color:yellow;
+    text-shadow: 1px 1px 20px black;
+    font-size: 4rem;
+    
+}
+
+.button{
+   align-items: center;
+   padding-left: 200px;
+
+}
+

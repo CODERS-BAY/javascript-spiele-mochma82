@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+
+
+
+<head>
+<meta charset="utf-8">
+<title>Schere, Stein und Papier</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../Spiel1/monster.html">Monsterspiel</a></li>
+                <li><a href="../Spiel2/index.html">Stein, Schere, Papier</a> </li>
+                <li> <a href="../Spiel3/main.html">Zahlen Raten</a></li>
+                <li> <a href="../Spiel4/codeBreaker2.html">Code Breaker</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="screens">
+    <div id="screen1" class="screen">
+        <label>Wie oft willst du spielen? <br>
+        <input id="counterInput" type="number" min="1" />
+        <button class="button" onclick="changeScreen()">Start</button>
+    </label>
+    </div>
+    
+    
+    <div id="screen2" class="screen hidden">
+        <h1>Schnick, Schnack, Schnuck</h1>
+
+        <div class="container">
+        <div id="stein"  onclick="start('STEIN')"><img src="../Spiel2/image/3265337_WE_FS_001_SteinGesichtmitzwinkerndemAuge18x20x12cm.jpg" alt="Stein" width="200px" height="200px"></div>
+        <div id="schere" onclick="start('SCHERE')"><img src="../Spiel2/image/leinwandbilder-schere-clip-art-cartoon-abbildung.jpg" alt="Schere" width="200px" height="200px"></div>
+        <div id="papier" onclick="start('PAPIER')"><img src="../Spiel2/image/26425397-ein-glücklich-cartoon-stück-papier-ausgeführt-und-lächelnd-.jpg" width="200px" height="200px" alt="Papier"> </div>
+        </div>
+        <h4>Siege Spieler  
+        <span id="spieler">0</span>
+        </h4>
+        <h4>Siege Computer 
+        <span id="pc">0</span>
+        </h4>
+       
+    </div>
+    </div>      
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+
+
+</html>

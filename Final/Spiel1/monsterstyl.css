@@ -1,0 +1,176 @@
+*{
+    box-sizing: border-box;
+}
+
+body, html{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+:root{
+    --primary:red;
+}
+
+body{
+    
+    background-image: url(Image/4743b54ca2b2398624fbc248aeedd01f.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+p {
+    color:var(--primary);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 2rem;   
+}
+
+label{
+    color:var(--primary);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.button{
+    color: var(--primary);
+}
+
+.screen{
+    box-shadow:1px 1px 10px var(--primary);
+    display: flex;
+    display:none;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 40px;
+    margin: 20px;
+    flex-wrap: wrap; 
+    width: 40%; 
+}
+
+.screen.active{
+  
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center; 
+}
+
+
+
+.screen.active label{
+    margin:20px;
+}
+
+.button{
+    background-color: var(--primary);
+    display: inline-block;
+    padding:10px;
+    margin-top: 20px;
+    color:#fff;
+}
+
+.button:hover{
+    background-color: var(--primary);
+    pointer-events: pointer;
+    cursor: pointer;
+}
+
+#kraft, #tryCounter, #winkel, #welt{
+    width: 200px;
+    height: 30px;
+}
+
+
+#screen1{
+    flex-direction: column;
+}
+
+#screen2{
+    background-image:url(Image/istockphoto-178640157-612x612.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y:center;
+
+}
+
+.alert{
+    background-color: var(--primary);
+    color:white;
+}
+
+h1{
+    font-weight: bold;
+}
+
+#addPopUp{
+    font-size: 3rem;
+    box-shadow: 1px 1px 10px #777;
+    display: block;
+    padding: 40px;
+    left:0;
+    right:0;
+    margin: 0 auto;
+    top: 30vh;
+    width: 500px;
+    position: absolute;
+    text-align: center;
+    background-color: blanchedalmond;
+}
+
+#addPopUp1{
+    color: var(--primary);
+    font-size: 3rem;
+    box-shadow: 1px 1px 10px #777;
+    display: block;
+    padding: 40px;
+    left:0;
+    right:0;
+    margin: 0 auto;
+    top: 30vh;
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    text-align: center;
+    background-image: url(Image/Jo1c.gif);
+    background-repeat: no-repeat;
+
+}
+
+header{
+    background-color: rgb(34, 35, 37);
+    padding: 10px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#screens{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    
+}

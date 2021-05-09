@@ -1,0 +1,46 @@
+/*img{
+    background-position: center;
+    height: 25vh;
+    width:100%;
+    background-size: cover;
+}*/
+
+*{
+    box-sizing: border-box;
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color: rgb(208, 10, 235);
+    padding: 30px;
+
+ 
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+body{
+    background-image: url(../Final/img/cod-black-ops-cold-war-arcades_6120049.jpg);
+    background-size: cover;
+}

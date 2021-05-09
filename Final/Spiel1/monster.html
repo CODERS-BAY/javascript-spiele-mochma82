@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Handyweitwurf</title>
+    <link rel="stylesheet" href="monsterstyl.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../Monster/monster.html">Monsterspiel</a></li>
+                <li><a href="../Spiel2/index.html">Stein, Schere, Papier</a> </li>
+                <li> <a href="../Spiel3/main.html">Zahlen Raten</a></li>
+                <li> <a href="../Spiel4/codeBreaker2.html">Code Breaker</a></li>
+
+            </ul>
+
+        </nav>
+    </header>
+
+   <div id="screens">
+    <div id="screen1" class="screen active" style="background-color:gray" >
+        <h2>Handyweitwurf</h2>
+   
+        <h3>Wähle Region</h3>
+        <select name="Welt_auswählen" id="welt">
+                <option value="9.81">Erde</option>
+                <option value="1.62">Mond</option>
+                <option value="3.69">Mars</option>
+                <option value="24.79">Jupiter</option>
+        </select>
+
+            <label>Wie oft möchtest du spielen?</label>
+            <input type="number" id="tryCounter" name="tryCounter" min="1" max="10">
+            <div class="button" onclick="changeScreen(true)">Start</div>
+
+
+    </div>
+
+    <div id="screen2" class="screen">
+        <div class="alert"> 
+            <strong>Danger!</strong> Wild creature is coming!!!
+        </div>
+        <h1>Triff das Monster</h1>
+        <P>Winkel</P>
+        <input type="number" id="winkel" max="90" min="1" placeholder="Wähle eine Zahl zw 1 und 90">
+    
+        <p>Stärke</p>
+        <input type="number" id="kraft" min="1" placeholder="Stärke angeben">
+        
+        <div class="button" id="werfen"  onclick="eingabe()">Werfen</div>
+
+        <div>
+            
+        </div>
+        <div class="button" id="back" onclick="changeScreen(false)">zurück</div> <br>
+        <span id="output"></span>
+        
+</div> 
+</div>
+    
+<script type="text/javascript" src="monsterjs.js"></script>
+</body>
+
+</html>
