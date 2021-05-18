@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    padding: 0;
+    margin:0;
+
+}
+:root{
+    --primary:yellow;
+}
+
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-image: url(../Spiel4/Image/codeknackerg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+
+
+#code {
+    background-color: red;
+    font-weight: bold;
+    color: black;
+    font-size: 1.5rem;
+    width: 100px;
+    margin: 40px;
+}
+
+#code1{
+    background-color: red;
+    font-weight: bold;
+    color: black;
+    font-size: 1.5rem;
+    width: 100px;
+    margin: 40px;
+   
+}
+#code2{
+    background-color: red;
+    font-weight: bold;
+    color: black;
+    font-size: 1.5rem;
+    width: 100px;
+    margin: 60px;
+ 
+}
+
+.button1{
+
+    background-color: gray;
+    color:var(--primary);
+    width: 100px;
+    height: 50px;
+    margin: 40px;
+}
+
+#button2{
+    background-color: gray;
+    color:var(--primary);
+    width: 100px;
+    height: 50px;
+    margin: 40px;
+    display: none;
+}
+
+.button{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 20px 30px;
+   
+}
+
+.button1:hover{
+    cursor: pointer;
+    background-color: blue;
+}
+
+h1{
+    font-weight: bold;
+    color: var(--primary);
+    text-shadow: 1px 1px 20px black;
+    font-size: 4rem;
+    
+}
+
+
+#img1{
+    width: 200px;
+    height: 200px;
+    margin: 0px 10px;
+    
+
+}
+
+#img2{
+    width: 200px;
+    height: 200px;
+    margin: 0px 20px;
+   
+}
+
+#img3{
+    width: 200px;
+    height: 200px;  
+    margin: 0px 10px;
+   
+}
+
+h2{
+    color:var(--primary);
+    font-size: 3rem;
+}
+
+p{
+    color:var(--primary);
+    font-size: 2rem; 
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#input{
+    align-content: center;
+}
+
+header{
+    background-color: rgb(15, 86, 219);
+    padding: 10px;
+    width: 100vw;
+    
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+}

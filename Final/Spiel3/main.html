@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Zahlen Raten</title>
+<link rel="stylesheet" href="main.css">
+
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../Spiel1/monster.html">Monsterspiel</a></li>
+                <li><a href="../Spiel2/index.html">Stein, Schere, Papier</a> </li>
+                <li> <a href="../Spiel3/main.html">Zahlen Raten</a></li>
+                <li> <a href="../Spiel4/codeBreaker2.html">Code Breaker</a></li>
+
+            </ul>
+
+        </nav>
+    </header>
+
+    <div id="screens">
+    <div id="screen1" class="screen">
+        <h1>???Zahlen raten???</h1>
+        <input id="try" type="number" placeholder="Anzahl Versuche" min="1"> <br>
+        <button id="button" onclick="start()">START</button>
+    </div>
+
+
+
+
+    <div id="screen2" class="screen hidden" >
+        <div class="absatz">
+            <h2>OBERGRENZE FESTLEGEN</h2>
+        <input id="grenze" type="number" placeholder="Obergrenze" name="obergrenze" min="1"> <br>
+        <button id="button" onclick="boarder()">OBERGRENZE</button>
+        </div>
+        <div class="absatz">
+            <h2>FINDE DIE GESUCHTE ZAHL</h2>
+        <input type="number" id="zahl" placeholder="Gib eine Zahl ein" name="zahl" min="1">  <br>
+        <button id="button" onclick="raten()">RATEN</button>
+        </div>
+            <h3>Ergebnis</h3> <br>
+            <span id="output"></span>
+    </div>
+    </div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+
+</body>
+
+
+</html>

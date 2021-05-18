@@ -1,0 +1,180 @@
+*{
+    box-sizing: border-box;
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+
+}
+
+:root{
+    --white:#fff;
+    --blue: #0000ff;
+    --yellow:#ffff00;
+    --rot:#ff0000;
+
+}
+
+body{
+    background-image: url(../Spiel2/image/schere-stein-papier-quer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+  
+.screen{
+    display: flex;
+    box-shadow: 1px 1px 10px var(--rot);
+    margin: 20px;
+    padding: 50px;
+    text-align: center;
+    background-color: transparent;
+    align-items: center; 
+    justify-content: center;
+    width: 80%;
+    
+}
+
+#screen2{
+    flex-direction: column;
+   
+}
+
+.screen.hidden{
+  display: none;    
+}
+
+
+.button{
+    font-size: 3rem;
+    color: var(--rot);
+    background-color:var(--blue);
+    width: 50%;
+    height: 50%;
+    display: inline-block;
+    
+
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color: var(--white);
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#stein, #schere, #papier{
+    cursor: pointer;
+    background-color:var(--white);
+    padding: 10px;
+    margin: 10px;
+}
+
+#stein:hover{
+    cursor: pointer;
+    background-color:var(--yellow);
+
+}
+
+#schere:hover{
+    cursor: pointer;
+    background-color: var(--yellow);
+
+}
+
+#papier:hover{
+    cursor: pointer;
+    background-color: var(--yellow);
+
+}
+#popUp{
+    color:var(--rot);
+    font-size: 3rem;
+    box-shadow: 1px 1px 10px #777;
+    display: block;
+    padding: 40px;
+    left:0;
+    right:0;
+    margin: 0 auto;
+    top: 30vh;
+    width: 500px;
+    position: absolute;
+    text-align: center;
+    background-color:var(--white);
+    font-variant: uppercase;
+    text-transform: uppercase;
+}
+
+#again{
+    padding:40px;
+    margin:40px;
+    color:black;
+    background-color: var(--rot);
+    font-weight: bold;
+    
+}
+#again:hover{
+    cursor:pointer;
+    background-color:var(--white);
+}
+
+label{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h1{
+    color:var(--blue);
+    font-size: 3rem;
+}
+
+#spieler, #pc{
+    color: var(--blue);
+    font-size: 1.5rem;
+}
+
+h4{
+    font-size: 1.5rem;
+}
+
+#counterInput{
+    width: 200px;
+    height: 25px;
+    margin: 20px;
+}
+
+header{
+    background-color: rgb(15, 86, 219);
+    padding: 10px;
+    width: 100vw;
+    
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#screens{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}

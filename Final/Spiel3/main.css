@@ -1,0 +1,173 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --main-color: #ff0000;
+
+}
+
+body{
+   
+    min-height: 100vh;
+
+}
+
+
+
+html{
+    background-image: url(../Spiel3/img/unnamed.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+#grenze, #zahl, #try{
+ border: solid black;
+}
+
+
+
+
+
+#button{
+    margin: 40px;
+}
+
+#button:hover{
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+}
+
+#button:before{
+    content: '<<<<';
+    color: red;
+}
+
+#button:after{
+    content: '>>>>';
+    color: var(--main-color);
+}
+
+.absatz{
+    margin: 30px;
+}
+
+.screen{
+    display: flex;
+    box-shadow:1px 1px 10px rgb(11, 8, 167);
+    flex-direction: column;
+     padding: 40px;
+     text-align: center;
+     margin: 50px;
+     justify-content: center;
+     flex-wrap: wrap;
+     align-items: center;
+     
+     
+     
+
+     
+}
+
+.screen.hidden{
+    display: none;
+
+}
+
+h1{
+    color: var(--main-color);
+    text-shadow:1px 1px 10px black;
+}
+
+h2{
+    color: var(--main-color);
+    text-shadow:1px 1px 10px black;
+}
+
+h3{
+    color: var(--main-color);
+    text-shadow:1px 1px 10px black;
+}
+
+#PopUp{
+    background-color: black;
+    color: var(--main-color);
+    position:absolute;
+    font-size: 3rem;
+    padding: 80px;
+    left:0;
+    right:0;
+    margin: 0 auto;
+    top: 30vh;
+    width: 500px;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    
+
+}
+
+#ok{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+}
+
+#output{
+    color: yellow;
+    font-size: 3rem;
+}
+
+header{
+    background-color: rgb(147, 167, 233);
+    padding: 10px;
+    width: 100vw;
+    
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#screens{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+
+
